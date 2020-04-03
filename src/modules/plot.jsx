@@ -42,7 +42,7 @@ class Plotter extends Component {
         this.setData();
         this.props.newPlot()
     }
-    Plotly.react(this.state.root,this.state.data,{ margin: { l: 0, r: 0, b: 0, t: 0 } },{ responsive: true })
+    Plotly.newPlot(this.state.root,this.state.data,{ margin: { l: 0, r: 0, b: 0, t: 0 } },{ responsive: true })
   }
 
   setData = () => {
